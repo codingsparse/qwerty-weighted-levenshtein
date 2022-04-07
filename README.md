@@ -4,7 +4,7 @@ Implementation of Levensthtein and Damerau-Levenshtein edit distances (and simil
 
 Not all edits are equal! Insertions and substitutions of characters should be considered differently if the characters are close to each other in a standard QWERTY keyboard.
 
-This library it gives different distances based on the closeness of characters in the keyboard and it returns the Levensthtein edit distance (insertion, deletion, substition of characters) as well as Damerau-Levenshtein distance
+This library it gives different distances based on the closeness of characters in the keyboard and it returns the Levensthtein edit distance (insertion, deletion, substition of characters) as well as Damerau-Levenshtein distance (insertion, deletion, substition and transpositions of adjacent characters).
 
 It also provides similarity scores from 0.0 to 1.0 denoting how similar the two strings are.
 
@@ -28,7 +28,7 @@ qwerty_weighted_levenshtein("test", "yest") # It returns 0.7 as t and y are clos
 
 - [Weighting Edit Distance to
 Improve Spelling Correction in
-Music Entity Search](http://www.diva-portal.org/smash/get/diva2:1116701/FULLTEXT01.pdf): Master's thesis of A. Samuellson implementing same principle for Spotify Search engine and showing correlation between physical position of keys on the keyboard and spelling mistakes/
+Music Entity Search](http://www.diva-portal.org/smash/get/diva2:1116701/FULLTEXT01.pdf): Master's thesis of A. Samuellson implementing same principle for Spotify Search engine and showing correlation between physical position of keys on the keyboard and spelling mistakes.
 - [infoscout/weighted-levenshtein](https://github.com/infoscout/weighted-levenshtein): Cython library implementing weighted Levensthein distance function.
 - [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance#Distance_with_adjacent_transpositions)
 
