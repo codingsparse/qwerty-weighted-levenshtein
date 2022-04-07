@@ -51,6 +51,9 @@ def _base_distance_similarity(
     if text_1 == text_2:
         return 1.0 if similarity else 0.0
 
+    text_1 = text_1.encode("ascii", errors="ignore").decode()
+    text_2 = text_2.encode("ascii", errors="ignore").decode()
+
     distance = distance_fn(text_1, text_2, substitute_costs=QWERTY_COSTS)
     if not similarity:
         return distance
