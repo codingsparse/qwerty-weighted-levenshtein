@@ -11,7 +11,7 @@ It also provides similarity scores from 0.0 to 1.0 denoting how similar the two 
 ## Install
 
 ```terminal
-pip install qwerty_weighted_levenshtein
+pip install qwerty-weighted-levenshtein
 ```
 
 ## Usage
