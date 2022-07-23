@@ -59,7 +59,7 @@ def _base_distance_similarity(
         return distance
     len1, len2 = len(text_1), len(text_2)
 
-    max_distance = min(len1, len2) + (max(len1, len2) - min(len1, len2))
+    max_distance = max(len1, len2)
     similarity = (max_distance - distance) / max_distance
     return similarity
 
